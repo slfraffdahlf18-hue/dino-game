@@ -1,0 +1,197 @@
+[gd_scene load_steps=29 format=3 uid="uid://b2w70birlqwl"]
+
+[ext_resource type="Script" uid="uid://dqp1omr8jj7tr" path="res://mainmenu.gd" id="2_y08s7"]
+[ext_resource type="Texture2D" uid="uid://biv6sdj26ptt3" path="res://auly-hltrain6.jpg" id="2_yx8ip"]
+[ext_resource type="Texture2D" uid="uid://cdcwd81xju4w0" path="res://Asset/asiao/PNG/blue_button05.png" id="3_dmqx6"]
+[ext_resource type="Texture2D" uid="uid://cen51lvnnf2bq" path="res://Icon/play01.png" id="3_y5i8j"]
+[ext_resource type="Texture2D" uid="uid://bgw6u2wljan10" path="res://Icon/play02.png" id="4_f0ka0"]
+[ext_resource type="Texture2D" uid="uid://dtu8jqcnxfuc" path="res://Asset/asiao/PNG/blue_button00.png" id="5_at6rn"]
+[ext_resource type="Texture2D" uid="uid://bfiv08niy8bkh" path="res://Icon/play03.png" id="5_lqdfc"]
+[ext_resource type="Texture2D" uid="uid://bbhvrtf6rvtqe" path="res://Icon/play05.png" id="6_cpamr"]
+[ext_resource type="Texture2D" uid="uid://d3soph72ggys7" path="res://Asset/asiao/PNG/blue_button01.png" id="6_dihg0"]
+[ext_resource type="Texture2D" uid="uid://bb28wa4g0j01a" path="res://Asset/asiao/PNG/blue_button03.png" id="7_rqglp"]
+[ext_resource type="Texture2D" uid="uid://bqpf3ndg3wkbx" path="res://Icon/Icon8.png" id="8_rqglp"]
+[ext_resource type="Texture2D" uid="uid://be17kof36ltxh" path="res://Icon/IconPressed/IconPressed8.png" id="9_0y70q"]
+[ext_resource type="PackedScene" uid="uid://db0h1el2ulohk" path="res://ui_character.tscn" id="10_0y70q"]
+[ext_resource type="FontFile" uid="uid://do7s2xx0ry3kn" path="res://Asset/asiao/Font/Abaddon Bold.ttf" id="12_raimv"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wyveq"]
+texture = ExtResource("6_cpamr")
+modulate_color = Color(0.435294, 0.470588, 0.815686, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ryw6h"]
+texture = ExtResource("5_lqdfc")
+modulate_color = Color(0.435294, 0.470588, 0.815686, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_15uwp"]
+texture = ExtResource("4_f0ka0")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_iopcy"]
+texture = ExtResource("3_y5i8j")
+modulate_color = Color(0.436129, 0.471662, 0.814018, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_lidg2"]
+texture = ExtResource("3_dmqx6")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qrn07"]
+texture = ExtResource("7_rqglp")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0y70q"]
+texture = ExtResource("6_dihg0")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_igs2m"]
+texture = ExtResource("5_at6rn")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_f0ka0"]
+texture = ExtResource("8_rqglp")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_y5i8j"]
+texture = ExtResource("9_0y70q")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qy7ti"]
+texture = ExtResource("8_rqglp")
+modulate_color = Color(1, 1, 1, 0.443137)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_raimv"]
+texture = ExtResource("8_rqglp")
+
+[sub_resource type="LabelSettings" id="LabelSettings_0y70q"]
+font_size = 31
+
+[sub_resource type="LabelSettings" id="LabelSettings_qy7ti"]
+font = ExtResource("12_raimv")
+font_size = 80
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_y08s7")
+metadata/_edit_horizontal_guides_ = [-120.0]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -142.0
+offset_top = -236.0
+offset_right = 616.0
+offset_bottom = 196.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_yx8ip")
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -122.0
+offset_top = 180.0
+offset_right = 122.0
+offset_bottom = 272.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_wyveq")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_ryw6h")
+theme_override_styles/hover = SubResource("StyleBoxTexture_15uwp")
+theme_override_styles/focus = SubResource("StyleBoxTexture_iopcy")
+text = "
+"
+
+[node name="Menu" type="Button" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_left = 12.0
+offset_top = 12.0
+offset_right = 91.0
+offset_bottom = 60.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_lidg2")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_qrn07")
+theme_override_styles/hover = SubResource("StyleBoxTexture_0y70q")
+theme_override_styles/focus = SubResource("StyleBoxTexture_igs2m")
+text = "Menu
+"
+
+[node name="InstagramButton" type="Button" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_left = 8.0
+offset_top = 578.0
+offset_right = 62.0
+offset_bottom = 626.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_f0ka0")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_y5i8j")
+theme_override_styles/hover = SubResource("StyleBoxTexture_qy7ti")
+theme_override_styles/focus = SubResource("StyleBoxTexture_raimv")
+
+[node name="Label" type="Label" parent="InstagramButton"]
+layout_mode = 0
+offset_top = 47.0
+offset_right = 96.0
+offset_bottom = 70.0
+text = "sosial media"
+
+[node name="PenghiasNoFungsi" type="Button" parent="."]
+layout_mode = 0
+offset_left = 939.0
+offset_top = 426.0
+offset_right = 1092.8904
+offset_bottom = 607.54395
+scale = Vector2(0.949959, 0.975568)
+
+[node name="UiCharacter" parent="PenghiasNoFungsi" instance=ExtResource("10_0y70q")]
+position = Vector2(-130.53194, -117.88004)
+
+[node name="Label" type="Label" parent="PenghiasNoFungsi/UiCharacter"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 54.7393
+offset_top = 266.436
+offset_right = 210.739
+offset_bottom = 404.436
+grow_horizontal = 2
+grow_vertical = 2
+text = "Character
+
+"
+label_settings = SubResource("LabelSettings_0y70q")
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -237.0
+offset_top = -265.0
+offset_right = 248.0
+offset_bottom = -175.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Lost in Jungle"
+label_settings = SubResource("LabelSettings_qy7ti")
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1113.0
+offset_top = 3.0
+offset_right = 1153.0
+offset_bottom = 52.0
+text = "v1.0
+"
+
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Menu" to="." method="_on_menu_pressed"]
+[connection signal="pressed" from="InstagramButton" to="." method="_on_instagram_button_pressed"]

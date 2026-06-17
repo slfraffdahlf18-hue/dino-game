@@ -1,0 +1,50 @@
+[gd_scene load_steps=7 format=3 uid="uid://db0h1el2ulohk"]
+
+[ext_resource type="Texture2D" uid="uid://rl8d4ni0g8b3" path="res://FinnSprite.png" id="1_sf7dp"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sf7dp"]
+atlas = ExtResource("1_sf7dp")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mxr2n"]
+atlas = ExtResource("1_sf7dp")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vh7nf"]
+atlas = ExtResource("1_sf7dp")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8b5nl"]
+atlas = ExtResource("1_sf7dp")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mxr2n"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sf7dp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mxr2n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vh7nf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8b5nl")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 8.0
+}]
+
+[node name="UiCharacter" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(220.49997, 213.99982)
+scale = Vector2(5.281248, 5.3124886)
+sprite_frames = SubResource("SpriteFrames_mxr2n")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.143484

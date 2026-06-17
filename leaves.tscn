@@ -1,0 +1,43 @@
+[gd_scene load_steps=6 format=3 uid="uid://b3nfgn7qj8yr5"]
+
+[ext_resource type="Texture2D" uid="uid://ddjneed0eodir" path="res://ELR_SpringlLeaf.png" id="1_780td"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_r256d"]
+particles_animation = true
+particles_anim_h_frames = 7
+particles_anim_v_frames = 1
+particles_anim_loop = false
+
+[sub_resource type="Gradient" id="Gradient_o1wdn"]
+offsets = PackedFloat32Array(0, 0.0962025, 0.794937, 1)
+colors = PackedColorArray(1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_qrd75"]
+gradient = SubResource("Gradient_o1wdn")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_fo55r"]
+particle_flag_disable_z = true
+emission_shape = 3
+emission_box_extents = Vector3(500, 200, 1)
+spread = 20.0
+initial_velocity_min = 20.0
+initial_velocity_max = 80.0
+angular_velocity_min = -1.60933e-05
+angular_velocity_max = 50.0
+gravity = Vector3(0, 10, 0)
+scale_min = 0.5
+scale_max = 1.2
+color_ramp = SubResource("GradientTexture1D_qrd75")
+anim_offset_max = 1.0
+
+[node name="Node2D" type="Node2D"]
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="."]
+texture_filter = 1
+material = SubResource("CanvasItemMaterial_r256d")
+position = Vector2(572, 342)
+scale = Vector2(-1.748, -1.71571)
+amount = 100
+texture = ExtResource("1_780td")
+visibility_rect = Rect2(-500, -200, 1000, 400)
+process_material = SubResource("ParticleProcessMaterial_fo55r")

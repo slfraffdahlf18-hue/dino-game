@@ -1,0 +1,280 @@
+[gd_scene load_steps=31 format=3 uid="uid://djykfe6ttf5h"]
+
+[ext_resource type="Script" uid="uid://dvwsuhpclds8v" path="res://Scrolling.gd" id="1_6fql5"]
+[ext_resource type="Script" uid="uid://u27nha4aumxi" path="res://MainScene.gd" id="1_baphb"]
+[ext_resource type="PackedScene" uid="uid://d2nuxuf6mswx0" path="res://ground.tscn" id="2_5ogrh"]
+[ext_resource type="Texture2D" uid="uid://ur8s61xrc6rd" path="res://Layer_0000_9.png" id="3_13vc8"]
+[ext_resource type="Texture2D" uid="uid://blasi1xy6x1mx" path="res://Layer_0011_0.png" id="3_lrrcx"]
+[ext_resource type="PackedScene" uid="uid://dwu5gkb77omsw" path="res://dino.tscn" id="3_vgka0"]
+[ext_resource type="Texture2D" uid="uid://bn1k1bj8dx6te" path="res://Layer_0010_1.png" id="3_wuuia"]
+[ext_resource type="Texture2D" uid="uid://cykdv1ewfsg0m" path="res://Layer_0009_2.png" id="5_vhjk7"]
+[ext_resource type="Texture2D" uid="uid://sesqewcxdq6n" path="res://Layer_0008_3.png" id="6_5esx2"]
+[ext_resource type="Texture2D" uid="uid://d4cfjfwubucrs" path="res://Layer_0006_4.png" id="8_ubcgw"]
+[ext_resource type="Script" uid="uid://c3b6q71mi3otl" path="res://ScrollingBG3.gd" id="9_8p75i"]
+[ext_resource type="Texture2D" uid="uid://d1ipgfeae8akk" path="res://Layer_0005_5.png" id="9_vybq2"]
+[ext_resource type="Texture2D" uid="uid://dphnlecq3esjw" path="res://Layer_0004_Lights.png" id="10_gela2"]
+[ext_resource type="Texture2D" uid="uid://o7xjjya4yp66" path="res://Layer_0003_6.png" id="11_4p2bj"]
+[ext_resource type="Texture2D" uid="uid://bte5yeb6743j4" path="res://Layer_0002_7.png" id="12_1sfh1"]
+[ext_resource type="Script" uid="uid://bn7a1ty05ashe" path="res://ScrollingBG2.gd" id="14_1ipir"]
+[ext_resource type="Script" uid="uid://c41hf1j4tkjxk" path="res://ScrollingBG4.gd" id="14_muhi2"]
+[ext_resource type="Script" uid="uid://mfdlu2yhtvqm" path="res://ScrollingBG5.gd" id="15_dd1de"]
+[ext_resource type="Texture2D" uid="uid://b8sftgbp8ju1r" path="res://Asset/asiao/PNG/blue_sliderUp.png" id="18_4ndho"]
+[ext_resource type="PackedScene" uid="uid://c2ggwjf745kt8" path="res://rain.tscn" id="19_mgxa6"]
+[ext_resource type="PackedScene" uid="uid://c6njeswaiomtt" path="res://stump.tscn" id="19_vdune"]
+[ext_resource type="PackedScene" uid="uid://b3nfgn7qj8yr5" path="res://leaves.tscn" id="22_jf078"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3megy"]
+size = Vector2(53, 680.5)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_uud6n"]
+texture = ExtResource("18_4ndho")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_l2cvt"]
+texture = ExtResource("18_4ndho")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_266sh"]
+texture = ExtResource("18_4ndho")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_b1cwv"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bv7u8"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cjof4"]
+texture = ExtResource("18_4ndho")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dae32"]
+texture = ExtResource("18_4ndho")
+
+[node name="MAIN" type="Node"]
+script = ExtResource("1_baphb")
+Stump = ExtResource("19_vdune")
+metadata/_edit_horizontal_guides_ = [-590.0]
+
+[node name="ObstacleStumpTimer" type="Timer" parent="."]
+autostart = true
+
+[node name="ScrollingBackground" type="Node" parent="."]
+
+[node name="ScrollingBG" type="Node2D" parent="ScrollingBackground"]
+script = ExtResource("1_6fql5")
+
+[node name="Layer1" type="Node2D" parent="ScrollingBackground/ScrollingBG"]
+
+[node name="Sprite2D" type="Sprite2D" parent="ScrollingBackground/ScrollingBG/Layer1"]
+texture_filter = 1
+position = Vector2(576, 308.75)
+scale = Vector2(1.24138, 0.790038)
+texture = ExtResource("3_lrrcx")
+
+[node name="Sprite2D2" type="Sprite2D" parent="ScrollingBackground/ScrollingBG/Layer1"]
+texture_filter = 1
+position = Vector2(1727.25, 308.75)
+scale = Vector2(1.23976, 0.790038)
+texture = ExtResource("3_lrrcx")
+
+[node name="Layer2" type="Node2D" parent="ScrollingBackground/ScrollingBG"]
+
+[node name="Sprite2D" type="Sprite2D" parent="ScrollingBackground/ScrollingBG/Layer2"]
+position = Vector2(576, 314.25)
+scale = Vector2(1.24138, 0.79256)
+texture = ExtResource("3_wuuia")
+
+[node name="Sprite2D2" type="Sprite2D" parent="ScrollingBackground/ScrollingBG/Layer2"]
+position = Vector2(1727.25, 314.25)
+scale = Vector2(1.23976, 0.79256)
+texture = ExtResource("3_wuuia")
+
+[node name="ScrollingBG2" type="Node2D" parent="ScrollingBackground"]
+script = ExtResource("14_1ipir")
+
+[node name="Layer3" type="Node2D" parent="ScrollingBackground/ScrollingBG2"]
+
+[node name="Sprite2D" type="Sprite2D" parent="ScrollingBackground/ScrollingBG2/Layer3"]
+texture_filter = 1
+position = Vector2(576, 38.5)
+scale = Vector2(1.24138, 1.81715)
+texture = ExtResource("5_vhjk7")
+
+[node name="Sprite2D2" type="Sprite2D" parent="ScrollingBackground/ScrollingBG2/Layer3"]
+texture_filter = 1
+position = Vector2(1727.94, 38.5)
+scale = Vector2(1.24125, 1.81715)
+texture = ExtResource("5_vhjk7")
+
+[node name="Layer4" type="Node2D" parent="ScrollingBackground/ScrollingBG2"]
+
+[node name="Sprite2D" type="Sprite2D" parent="ScrollingBackground/ScrollingBG2/Layer4"]
+texture_filter = 1
+position = Vector2(575.874, -7.49999)
+scale = Vector2(1.24111, 1.87516)
+texture = ExtResource("6_5esx2")
+
+[node name="Sprite2D2" type="Sprite2D" parent="ScrollingBackground/ScrollingBG2/Layer4"]
+texture_filter = 1
+position = Vector2(1729, -7.49999)
+scale = Vector2(1.24111, 1.87516)
+texture = ExtResource("6_5esx2")
+
+[node name="ScrollingBG3" type="Node2D" parent="ScrollingBackground"]
+script = ExtResource("9_8p75i")
+
+[node name="Layer6" type="Node2D" parent="ScrollingBackground/ScrollingBG3"]
+
+[node name="Sprite2D" type="Sprite2D" parent="ScrollingBackground/ScrollingBG3/Layer6"]
+texture_filter = 1
+position = Vector2(582, -38)
+scale = Vector2(1.25431, 1.95213)
+texture = ExtResource("8_ubcgw")
+
+[node name="Sprite2D2" type="Sprite2D" parent="ScrollingBackground/ScrollingBG3/Layer6"]
+texture_filter = 1
+position = Vector2(1734, -38)
+scale = Vector2(1.25431, 1.95213)
+texture = ExtResource("8_ubcgw")
+
+[node name="Layer7" type="Node2D" parent="ScrollingBackground/ScrollingBG3"]
+
+[node name="Sprite2D" type="Sprite2D" parent="ScrollingBackground/ScrollingBG3/Layer7"]
+texture_filter = 1
+position = Vector2(576, 16.5)
+scale = Vector2(1.24138, 1.78941)
+texture = ExtResource("9_vybq2")
+
+[node name="Sprite2D2" type="Sprite2D" parent="ScrollingBackground/ScrollingBG3/Layer7"]
+texture_filter = 1
+position = Vector2(1728, 16.5)
+scale = Vector2(1.24138, 1.78941)
+texture = ExtResource("9_vybq2")
+
+[node name="Layer8" type="Node2D" parent="ScrollingBackground/ScrollingBG3"]
+
+[node name="Sprite2D" type="Sprite2D" parent="ScrollingBackground/ScrollingBG3/Layer8"]
+texture_filter = 1
+position = Vector2(573.5, 21.9999)
+scale = Vector2(1.23599, 1.77554)
+texture = ExtResource("10_gela2")
+
+[node name="Sprite2D2" type="Sprite2D" parent="ScrollingBackground/ScrollingBG3/Layer8"]
+texture_filter = 1
+position = Vector2(1726, 22)
+scale = Vector2(1.23599, 1.77554)
+texture = ExtResource("10_gela2")
+
+[node name="ScrollingBG4" type="Node2D" parent="ScrollingBackground"]
+script = ExtResource("14_muhi2")
+
+[node name="Layer9" type="Node2D" parent="ScrollingBackground/ScrollingBG4"]
+
+[node name="Sprite2D" type="Sprite2D" parent="ScrollingBackground/ScrollingBG4/Layer9"]
+texture_filter = 1
+position = Vector2(576, -6.49999)
+scale = Vector2(1.24138, 1.88777)
+texture = ExtResource("11_4p2bj")
+
+[node name="Sprite2D2" type="Sprite2D" parent="ScrollingBackground/ScrollingBG4/Layer9"]
+texture_filter = 1
+position = Vector2(1728, -6.49999)
+scale = Vector2(1.24138, 1.88777)
+texture = ExtResource("11_4p2bj")
+
+[node name="ScrollingBG5" type="Node2D" parent="ScrollingBackground"]
+script = ExtResource("15_dd1de")
+
+[node name="Layer10" type="Node2D" parent="ScrollingBackground/ScrollingBG5"]
+
+[node name="Sprite2D" type="Sprite2D" parent="ScrollingBackground/ScrollingBG5/Layer10"]
+texture_filter = 1
+position = Vector2(576, 55.1245)
+scale = Vector2(1.24138, 1.49527)
+texture = ExtResource("12_1sfh1")
+
+[node name="Sprite2D2" type="Sprite2D" parent="ScrollingBackground/ScrollingBG5/Layer10"]
+texture_filter = 1
+position = Vector2(1727, 55.3745)
+scale = Vector2(1.23922, 1.49464)
+texture = ExtResource("12_1sfh1")
+
+[node name="Layer11" type="Node2D" parent="ScrollingBackground/ScrollingBG5"]
+
+[node name="Sprite2D" type="Sprite2D" parent="ScrollingBackground/ScrollingBG5/Layer11"]
+texture_filter = 1
+position = Vector2(576, 324)
+scale = Vector2(1.24138, 0.81715)
+texture = ExtResource("3_13vc8")
+
+[node name="Sprite2D2" type="Sprite2D" parent="ScrollingBackground/ScrollingBG5/Layer11"]
+texture_filter = 1
+position = Vector2(1727.5, 323.75)
+scale = Vector2(1.2403, 0.817781)
+texture = ExtResource("3_13vc8")
+
+[node name="InvicibleWall" type="Node" parent="."]
+
+[node name="BinWall" type="StaticBody2D" parent="InvicibleWall" groups=["BinWall"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InvicibleWall/BinWall"]
+position = Vector2(-98, 313.75)
+shape = SubResource("RectangleShape2D_3megy")
+
+[node name="Ground" parent="." instance=ExtResource("2_5ogrh")]
+position = Vector2(245, 73)
+
+[node name="Dino" parent="." instance=ExtResource("3_vgka0")]
+position = Vector2(136, 591)
+
+[node name="Clouds2" parent="." instance=ExtResource("19_mgxa6")]
+position = Vector2(494, 347)
+scale = Vector2(4.49307, 0.427169)
+
+[node name="Clouds" parent="Clouds2" instance=ExtResource("19_mgxa6")]
+position = Vector2(-8.90263, -669.525)
+scale = Vector2(0.471768, 1.53003)
+
+[node name="Node2D" parent="Clouds2" instance=ExtResource("22_jf078")]
+position = Vector2(-38.5037, -891.919)
+scale = Vector2(0.222565, 2.34099)
+
+[node name="UI" type="Control" parent="."]
+z_index = 2
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button" type="Button" parent="UI"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -218.0
+offset_top = -176.0
+offset_right = -25.0
+offset_bottom = -15.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_styles/normal = SubResource("StyleBoxTexture_uud6n")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_l2cvt")
+theme_override_styles/hover = SubResource("StyleBoxTexture_266sh")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxTexture_b1cwv")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_bv7u8")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxTexture_cjof4")
+theme_override_styles/focus = SubResource("StyleBoxTexture_dae32")
+text = "JUMP"
+
+[node name="Score" type="Label" parent="UI"]
+layout_mode = 1
+offset_left = 16.0
+offset_right = 526.0
+offset_bottom = 57.0
+theme_override_font_sizes/font_size = 41
+text = "0"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+
+[connection signal="timeout" from="ObstacleStumpTimer" to="." method="_on_obstacle_stump_timer_timeout"]
+[connection signal="pressed" from="UI/Button" to="Dino" method="_on_button_pressed"]

@@ -1,0 +1,100 @@
+[gd_scene load_steps=10 format=3 uid="uid://cm83ysic4qjh5"]
+
+[ext_resource type="Script" uid="uid://dqp1omr8jj7tr" path="res://mainmenu.gd" id="1_g0r2l"]
+[ext_resource type="Texture2D" uid="uid://be2dtambyl7gi" path="res://WhatsApp Image 2024-08-13 at 07.47.46_e5b4113a.jpg" id="2_h8jxn"]
+[ext_resource type="Texture2D" uid="uid://cjnlxf1bcaux2" path="res://Asset/asiao/PNG/blue_button04.png" id="3_msbkp"]
+[ext_resource type="Texture2D" uid="uid://cdcwd81xju4w0" path="res://Asset/asiao/PNG/blue_button05.png" id="4_igtfx"]
+[ext_resource type="PackedScene" uid="uid://ml3k7ta7ayrk" path="res://dead.tscn" id="5_xmoje"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wyveq"]
+texture = ExtResource("3_msbkp")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ryw6h"]
+texture = ExtResource("4_igtfx")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_15uwp"]
+texture = ExtResource("3_msbkp")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_iopcy"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_g0r2l")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -116.0
+offset_bottom = 29.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_h8jxn")
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -186.0
+offset_top = 91.0
+offset_right = 186.0
+offset_bottom = 158.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_wyveq")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_ryw6h")
+theme_override_styles/hover = SubResource("StyleBoxTexture_15uwp")
+theme_override_styles/focus = SubResource("StyleBoxTexture_iopcy")
+text = "MULAI ULANG"
+
+[node name="Button3" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -186.0
+offset_top = 165.0
+offset_right = 186.0
+offset_bottom = 232.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_wyveq")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_ryw6h")
+theme_override_styles/hover = SubResource("StyleBoxTexture_15uwp")
+theme_override_styles/focus = SubResource("StyleBoxTexture_iopcy")
+text = "MENU UTAMA"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -182.0
+offset_top = -209.0
+offset_right = 196.0
+offset_bottom = -118.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 66
+text = "GAME OVER"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("5_xmoje")]
+position = Vector2(421, 152)
+
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]

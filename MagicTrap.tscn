@@ -1,0 +1,50 @@
+[gd_scene load_steps=8 format=3 uid="uid://qltkm1hk42pl"]
+
+[ext_resource type="Texture2D" uid="uid://ddjneed0eodir" path="res://ELR_SpringlLeaf.png" id="1_42nsc"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_guyn0"]
+atlas = ExtResource("1_42nsc")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hvawm"]
+atlas = ExtResource("1_42nsc")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_loqqv"]
+atlas = ExtResource("1_42nsc")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w7tcy"]
+atlas = ExtResource("1_42nsc")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5kb7d"]
+atlas = ExtResource("1_42nsc")
+region = Rect2(64, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5akmd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_guyn0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hvawm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_loqqv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w7tcy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5kb7d")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D"]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_5akmd")

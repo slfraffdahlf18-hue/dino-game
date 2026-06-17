@@ -1,0 +1,597 @@
+[gd_scene load_steps=15 format=3 uid="uid://ml3k7ta7ayrk"]
+
+[ext_resource type="Shader" uid="uid://lldp24ogcogp" path="res://dead.gdshader" id="1_trtky"]
+[ext_resource type="Texture2D" uid="uid://rl8d4ni0g8b3" path="res://FinnSprite.png" id="2_hbxvo"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_71jhg"]
+resource_local_to_scene = true
+shader = ExtResource("1_trtky")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_82g8g"]
+atlas = ExtResource("2_hbxvo")
+region = Rect2(608, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_panmp"]
+atlas = ExtResource("2_hbxvo")
+region = Rect2(544, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vjm5b"]
+atlas = ExtResource("2_hbxvo")
+region = Rect2(576, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ea8d4"]
+atlas = ExtResource("2_hbxvo")
+region = Rect2(640, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5avrg"]
+atlas = ExtResource("2_hbxvo")
+region = Rect2(672, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tyboy"]
+atlas = ExtResource("2_hbxvo")
+region = Rect2(704, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5dsbu"]
+atlas = ExtResource("2_hbxvo")
+region = Rect2(704, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h21xu"]
+atlas = ExtResource("2_hbxvo")
+region = Rect2(704, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nvmbm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_82g8g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_panmp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vjm5b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ea8d4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5avrg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tyboy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5dsbu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h21xu")
+}],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
+}]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_lpyvr"]
+resource_local_to_scene = true
+shader = ExtResource("1_trtky")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_teem0"]
+size = Vector2(142, 172)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+material = SubResource("ShaderMaterial_71jhg")
+position = Vector2(152, 132)
+scale = Vector2(5.75, 5.26563)
+sprite_frames = SubResource("SpriteFrames_nvmbm")
+animation = &"new_animation"
+autoplay = "new_animation"
+frame_progress = 0.96851
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+material = SubResource("ShaderMaterial_lpyvr")
+position = Vector2(153, 152)
+shape = SubResource("RectangleShape2D_teem0")

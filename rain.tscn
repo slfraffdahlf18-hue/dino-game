@@ -1,0 +1,65 @@
+[gd_scene load_steps=11 format=3 uid="uid://c2ggwjf745kt8"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_ugnil"]
+blend_mode = 1
+
+[sub_resource type="Curve" id="Curve_utfxo"]
+_limits = [0.0, 0.3, 0.0, 1.0]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.437166, 0.3), 0.0, 0.0, 0, 0, Vector2(0.495989, 0.3), 0.0, 0.0, 0, 0, Vector2(0.56016, 0.3), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 5
+
+[sub_resource type="CurveTexture" id="CurveTexture_t5utc"]
+curve = SubResource("Curve_utfxo")
+
+[sub_resource type="Gradient" id="Gradient_5xtvo"]
+offsets = PackedFloat32Array(0, 0.0028169, 0.825352, 0.977465)
+colors = PackedColorArray(0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0.0784314, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_xxrho"]
+gradient = SubResource("Gradient_5xtvo")
+
+[sub_resource type="Curve" id="Curve_cjig3"]
+_limits = [0.0, 3.0, 0.0, 1.0]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="Curve" id="Curve_3uh68"]
+_limits = [0.0, 30.0, 0.0, 1.0]
+_data = [Vector2(0, 14.5182), 0.0, 0.0, 0, 0, Vector2(0.199198, 29.1555), 0.0, 0.0, 0, 0, Vector2(0.255348, 30), 0.0, 0.0, 0, 0, Vector2(0.987968, 30), 0.0, 0.0, 0, 0]
+point_count = 4
+
+[sub_resource type="Curve" id="Curve_3at7i"]
+_limits = [0.0, 3.0, 0.0, 1.0]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveXYZTexture" id="CurveXYZTexture_t0hfd"]
+curve_x = SubResource("Curve_cjig3")
+curve_y = SubResource("Curve_3uh68")
+curve_z = SubResource("Curve_3at7i")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_dldkf"]
+particle_flag_disable_z = true
+emission_shape_offset = Vector3(0, -200, 1)
+emission_shape_scale = Vector3(350, 1, 1)
+emission_shape = 3
+emission_box_extents = Vector3(1, 1, 1)
+gravity = Vector3(0, 3000, 1)
+scale_min = 0.2
+scale_over_velocity_curve = SubResource("CurveXYZTexture_t0hfd")
+color_initial_ramp = SubResource("GradientTexture1D_xxrho")
+alpha_curve = SubResource("CurveTexture_t5utc")
+
+[node name="Clouds" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="."]
+material = SubResource("CanvasItemMaterial_ugnil")
+position = Vector2(63, 66)
+scale = Vector2(0.844585, 0.871831)
+amount = 1000
+lifetime = 0.5
+preprocess = 0.5
+visibility_rect = Rect2(-350, -200, 700, 400)
+process_material = SubResource("ParticleProcessMaterial_dldkf")

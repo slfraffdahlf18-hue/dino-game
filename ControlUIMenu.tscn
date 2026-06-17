@@ -1,0 +1,115 @@
+[gd_scene load_steps=16 format=3 uid="uid://mgg7vgkcqjoq"]
+
+[ext_resource type="Script" uid="uid://bpi6gyyn8ebk0" path="res://control_ui_menu.gd" id="1_uljqj"]
+[ext_resource type="Texture2D" uid="uid://biv6sdj26ptt3" path="res://auly-hltrain6.jpg" id="2_inslj"]
+[ext_resource type="Texture2D" uid="uid://ky0fd8gb7lt0" path="res://Asset/asiao/PNG/blue_cross.png" id="3_inslj"]
+[ext_resource type="Texture2D" uid="uid://b8sftgbp8ju1r" path="res://Asset/asiao/PNG/blue_sliderUp.png" id="4_0mso6"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_axrov"]
+texture = ExtResource("3_inslj")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_byj2i"]
+texture = ExtResource("3_inslj")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_purbf"]
+texture = ExtResource("3_inslj")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0mso6"]
+texture = ExtResource("3_inslj")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0wq35"]
+texture = ExtResource("4_0mso6")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_r8mvr"]
+texture = ExtResource("4_0mso6")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_x76v3"]
+texture = ExtResource("4_0mso6")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4iucm"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kdr43"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3v3gs"]
+texture = ExtResource("4_0mso6")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_d7qlk"]
+texture = ExtResource("4_0mso6")
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_uljqj")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color(0.67069, 0.67069, 0.67069, 1)
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -298.0
+offset_top = -156.0
+offset_right = 460.0
+offset_bottom = 276.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_inslj")
+
+[node name="BackToMenu" type="Button" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_left = 31.0
+offset_top = 19.0
+offset_right = 87.0
+offset_bottom = 73.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_axrov")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_byj2i")
+theme_override_styles/hover = SubResource("StyleBoxTexture_purbf")
+theme_override_styles/focus = SubResource("StyleBoxTexture_0mso6")
+
+[node name="Label" type="Label" parent="BackToMenu"]
+layout_mode = 0
+offset_left = -28.0
+offset_top = 59.0
+offset_right = 122.0
+offset_bottom = 113.0
+text = "balik ke menu awal
+"
+
+[node name="Button" type="Button" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -218.0
+offset_top = -176.0
+offset_right = -25.0
+offset_bottom = -15.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_styles/normal = SubResource("StyleBoxTexture_0wq35")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_r8mvr")
+theme_override_styles/hover = SubResource("StyleBoxTexture_x76v3")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxTexture_4iucm")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_kdr43")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxTexture_3v3gs")
+theme_override_styles/focus = SubResource("StyleBoxTexture_d7qlk")
+text = "JUMP"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 941.0
+offset_top = 625.0
+offset_right = 1123.0
+offset_bottom = 679.0
+text = "tekan ini untuk lompat"
+
+[connection signal="pressed" from="BackToMenu" to="." method="_on_back_to_menu_pressed"]
